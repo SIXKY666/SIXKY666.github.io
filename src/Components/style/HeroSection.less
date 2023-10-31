@@ -1,0 +1,37 @@
+@import "tailwindcss/base";
+// @import url('https://fonts.googleapis.com/css2?family=Archivo&family=Unbounded:wght@700&display=swap');
+@import "../../App.less";
+@primaryColor:#2D3142;
+@fontColor:#EF8354;
+
+
+.hero-section-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100vw;
+  height: 100vh;
+  background-color: @primaryColor;
+  color: #fff;
+}
+.image-container{
+  display: flex;
+  justify-content: center;
+}
+.image{
+  width: 80vw;
+  height: auto;
+}
+.name-text{
+  font-size: 2.5rem;
+  color: @fontColor;
+  font-family: @nameFont;
+}
+.position-name{
+  font-family: @positionFont;
+}
+
+.slide-in-fwd-center {
+  -webkit-animation: slide-in-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-in-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
